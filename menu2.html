@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Pilih Makanan & Minuman</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var lagi = true;
+
+    while(lagi){
+        
+        var makan = prompt("pilih makanan");
+        var minum = prompt("pilih minum");
+        
+        if (makan == 1 && minum == 1 ) {
+            alert('Anda Memilih Nasi & Jus');
+        }else if (makan == 1 && minum == 2){
+            alert('anda memilih Nasi & Teh Manis');
+        }else if (makan == 2 & minum == 1){
+            alert('anda memilih Baksi & Jus');
+        }else{
+            alert('anda memilih Bakso & Teh Manis')
+        }
+
+        lagi = confirm('Pilih Menu Lagi ?');
+    }
+    alert('Terima Kasih!');
+</script>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Pesan Makanan</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    var lagi = true;
+
+    while(lagi){
+        var makanan = parseInt (prompt('Masukan Pilihan Menu Makanan \n 1. Nasi Padang 2. Bakso 3. Soto Ayam '));
+        var minuman = parseInt(prompt('Masukan Pilihan Menu Minuman \n 1. Jus 2. Teh Manis 3. Air Mineral'));
+        switch(makanan){
+            case 1:
+            alert('Anda Memilih Nasi Padang');
+            break;
+            case 2:
+            alert('Anda Melilih Bakso');
+            break;
+            case 3:
+            alert('Anda Memilih Soto Ayam');
+            break;
+            default:
+            alert('Pilihan anda tidak ada dalam menu');
+            break;
+        }
+
+        switch(minuman){
+            case 1:
+            alert('Anda Melilih Jus');
+            break;
+            case 2:
+            alert('Anda Memilih Teh Manis');
+            break;
+            case 3:
+            alert('Anda Meilih Air Mineral');
+            break;
+
+            default:
+            alert('Pilihan anda tidak ada dalam menu');
+            break;
+        }
+
+
+        lagi = confirm('Pilih Menu makanan & Minuman Lagi ?');
+    }
+    alert('Terima Kasih');
+</script>
+</html>

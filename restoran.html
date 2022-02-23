@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Restoran</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+var lagi = true;
+
+while(lagi){
+
+    var makan = parseInt(prompt('Pesan Makanan \n 1. Bakso 2. Soto 3. Mie'));
+    var minum = parseInt(prompt('Pesan Minuman \n 1. Jus 2. Air Mineral 3. Teh Manis'));
+
+    var pesanan = '';
+
+    if(makan == 1 ){
+        if(minum == 1){
+            pesanan = "Bakso & Jus";
+        }else if (minum == 2){
+            pesanan = "Bakso & Air Mineral";
+        }else if(minum == 3){
+            pesanan = "Bakso & Teh Manis";
+        }else{
+            pesanan = "Minuman Tidak Ada";
+        }
+    }else if(makan == 2){
+        if(minum == 1){
+            pesanan = "Soto & Jus";
+        }else if (minum == 2){
+            pesanan = "Soto & Air Mineral";
+        }else if(minum == 3){
+            pesanan = "Soto & Teh Manis";
+        }else{
+            pesanan = "Minuman Tidak Ada";
+        }
+    }else if(makan == 3){
+        if(minum == 1){
+            pesanan = "Mie & Jus";
+        }else if (minum == 2){
+            pesanan = "Mie & Air Mineral";
+        }else if(minum == 3) {
+            pesanan = "Mie & Teh Manis";
+        }else{
+            pesanan = "Minuman Tidak Ada";
+        }
+    }else{
+        pesanan = "Tidak ada pada menu";
+    }
+
+    alert('Makanan yang anda pesan adalah ' + pesanan);
+
+    lagi = confirm('Pesan Menu Lain ?')
+}
+
+</script>
+</html>

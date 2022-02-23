@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+   
+    var lagi = true;
+
+    while(lagi){
+
+        player = prompt('Masukan Pilihan Anda \n (Semut, Gajah, Orang');
+        var comp = Math.random();
+        var hasil = '';
+
+        if (comp < 0.34 ){
+            comp = 'gajah';
+        }else if(comp >= 0.34 && comp <= 0.67){
+            comp = 'orang';
+        }else{
+            comp = 'semut';
+        }
+        console.log(comp);
+        
+
+        if (player == comp){
+            hasil = "Hasil Seri";
+        }else if(player == 'orang'){
+            if(comp == 'gajah'){
+                hasil = 'Kalah';
+            }else{
+                hasil = 'Menang';
+            }
+        }else if(player == 'gajah'){
+            if(comp == 'semut'){
+                hasil = 'Kalah';
+            }else{
+                hasil = 'Menang';
+            }
+        }else if(player == 'semut'){
+            if(comp == 'orang'){
+                hasil = 'Kalah';
+            }else{
+                hasil = 'Menang';
+            }
+        }
+
+        alert('Anda ' + hasil);
+        
+
+        lagi = confirm('main lagi ?');
+    }
+
+    alert('terima kasih');
+</script>
+</html>
